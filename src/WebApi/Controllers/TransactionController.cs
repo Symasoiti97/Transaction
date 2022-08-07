@@ -10,7 +10,7 @@ namespace WebApi.Controllers;
 /// <response code="400">Запрос построен неверно</response>
 /// <response code="404">Ресурс не найден</response>
 [ApiController]
-[Route("[controller]")]
+[Route("api/[controller]")]
 [ProducesResponseType(typeof(ErrorDto), StatusCodes.Status404NotFound)]
 [ProducesResponseType(typeof(ErrorDto), StatusCodes.Status400BadRequest)]
 public class TransactionController : ControllerBase
